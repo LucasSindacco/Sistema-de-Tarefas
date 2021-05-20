@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sistema de tarefas</title>
+</head>
+
+<body>
+    <section id="home-page">
+        <div class="container">
+            <div class="title-system">
+                <h1>Sistema de tarefa on-line</h1>
+                <p>Agende as suas tarefas fácil e rápido</p>
+            </div>
+            <div class="all-assignment">
+                <div class="box-add">
+                    <div class="header-add">
+                        <h1>Adicione sua tarefa</h1>
+                    </div>
+                    <form action="">
+                        <input type="text" class="add-assignment" placeholder="Nome da tarefa">
+                        <input type="text" class="add-assignment" placeholder="Tipo de tarefa">
+                        <input type="text" class="add-assignment" placeholder="Término da tarefa">
+                        <textarea name="" id="" cols="30" rows="10" class="add-assignment" placeholder="Detalhes"></textarea>
+                        <a href="#" class="btn-add">Adicionar tarefa</a>
+                    </form>
+                </div>
+                <div class="box-completed">
+                    <div class="header-add">
+                        <h1>Tarefas Adicionadas</h1>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="assignment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="text" class="remove-assignment" placeholder="Nome da atividade">
+                    <a href="#" class="btn-remove">Remover tarefa</a>
+                </div>
+                <div class="box-assignment">
+                    <div class="assignment-header">
+                        <h1>Detalhes da tarefa</h1>
+                    </div>
+                    <div class="content-assignment">
+                        <h3 id="assignment-name"></h3>
+                        <h3 id="assignment-type"></h3>
+                        <h3 id="assignment-date"></h3>
+                        <h3 id="assignment-details"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-add">
+        <h1>Atividade adicionada</h1>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
