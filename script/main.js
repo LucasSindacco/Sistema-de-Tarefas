@@ -42,13 +42,11 @@ function viewTextElement() {
         type: inputsObj[1].value,
         date: inputsObj[2].value,
         details: inputsObj[3].value,
-        element: assignment
     }
     assignment_arr.push(obj);
     assignment.addEventListener('click', function() {
         for (let i = 0; i < assignment_arr.length; i++) {
-            let obj = assignment_arr[i];
-            if (obj.element == assignment) {
+            if (assignment) {
                 document.querySelector('#assignment-name').textContent = `Nome da tarefa: ${obj.name}`;
                 document.querySelector('#assignment-type').textContent = `Tipo da tarefa: ${obj.type}`;
                 document.querySelector('#assignment-date').textContent = `Término da tarefa: ${obj.date}`;
